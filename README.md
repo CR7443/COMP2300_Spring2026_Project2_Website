@@ -11,9 +11,9 @@ The website focuses on a personal topic: balancing multiple roles in life, inclu
 The website consists of four main pages:
 
 - **index.html** – Main page introducing the topic and includes a 5-question quiz
-- **page2.html** – Describes professional responsibilities and work experience
-- **page3.html** – Covers educational background and career goals
-- **page4.html** – Focuses on fatherhood and personal priorities
+- **professional.html** – Describes professional responsibilities and work experience
+- **education.html** – Covers educational background and career goals
+- **personal.html** – Focuses on fatherhood and personal priorities
 - **style.css** – Contains all styling for the website
 
 ---
