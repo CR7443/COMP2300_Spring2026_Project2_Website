@@ -1,5 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+.site-header {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.site-header h1 {
+    margin: 0 0 0.5rem;
+}
+
+.site-header p {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.site-nav {
+    background-color: #222;
+    text-align: center;
+    padding: 0.9rem;
+}
+
+.site-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #8b0000;
+}
+
+.photo-split {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.photo-split figure {
+    background-color: white;
+    width: 320px;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.photo-split img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.photo-left {
+    align-self: flex-start;
+}
+
+.photo-right {
+    align-self: flex-end;
+}
+
+figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+main a {
+    color: #8b0000;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #8b0000;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.1rem;
+    margin-right: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #6d0000;
+}
+
+.quiz-result {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
 footer {
-    font-size: .70em;
+    font-size: 0.7em;
     text-align: center;
     font-style: italic;
+    background-color: #222;
+    color: white;
+    padding: 1.25rem 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #f5dcdc;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .site-nav a {
+        display: inline-block;
+        margin: 0.4rem 0.6rem;
+    }
+
+    .photo-split {
+        gap: 1.25rem;
+    }
+
+    .photo-split figure {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .photo-left,
+    .photo-right {
+        align-self: auto;
+    }
 }
